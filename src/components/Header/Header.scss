@@ -1,0 +1,65 @@
+.ham {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ccc;
+    padding: 15px;
+    transition: 0.3s;
+    display: none;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .inp {
+        width: 200px;
+    }
+
+}
+
+.nHam {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    @media screen and (max-width: 1100px) {
+        display: none;
+    }
+}
+
+.check {
+    z-index: 10;
+}
+
+.check {
+    display: none;
+}
+
+.a {
+    display: none;
+
+    @media screen and (max-width: 1100px) {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+        span {
+            display: block;
+            width: 20px;
+            height: 5px;
+            border-radius: 14px;
+            margin: 1px 0;
+            background: #000;
+        }
+        z-index: 1;
+    }
+}
+
+.check:checked~.ham {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

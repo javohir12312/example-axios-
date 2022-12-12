@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from "axios";
 import { Link } from 'react-router-dom';
 import './Home.scss'
+import Cards from '../card/Cards';
 
 const Home = ({ data }) => {
 
@@ -18,11 +19,12 @@ const Home = ({ data }) => {
 
     return (
         <>
+        <Cards/>
             {load ?
                 <ul className='m d-flex justify-content-between flex-wrap gap-3 list-unstyled'>
                     {post.map(item => {
                         return (
-                            <Link className='item border text-decoration-none border-5 p-4 rounded-5' to={`/${item.id}`}>
+                            <Link className='item text-decoration-none p-4 rounded-5' to={`/${item.id}`}>
                                 <img className='w-100 h-50 container' src={item.image} alt="" />
                                 <h4 className='text-center  text-black'>{item.title}</h4>
 

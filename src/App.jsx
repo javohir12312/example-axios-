@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import Home from './components/Home/Home'
 import Inner from './components/Inner/Inner'
@@ -16,6 +17,7 @@ const App = () => {
         <Route path={`/:id`} element={<Inner/>}/>
         <Route path='*'element={<NotFound/>}/>
       </Routes>
+      <Footer/>
     </div>
   )
 }

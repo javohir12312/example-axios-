@@ -13,7 +13,7 @@ const App = () => {
       <Header navArr={['ALL PRODUCTS', 'ABOUT SEEDRA', 'OUR BLOG', 'CONTACTS']} />
       <Routes>
         <Route path='/' element={<Home data={"https://fakestoreapi.com/products/"} />} />
-        <Route path='/ALL PRODUCTS' element={<Products data={"https://fakestoreapi.com/products/"} />} />
+        <Route path='/all prodeucts' element={<Products data={"https://fakestoreapi.com/products/"} />} />
         <Route path={`/:id`} element={<Inner />} />
         <Route path='*' element={<NotFound />} />
       </Routes>

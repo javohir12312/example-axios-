@@ -15,12 +15,14 @@
 
 .footer_item {
     display: flex;
+
     @media screen and (max-width: 1200px) {
         display: block;
 
-        
+
 
     }
+
     li:nth-child(1) {
 
         @media screen and (max-width: 1200px) {
@@ -28,7 +30,9 @@
             margin: 0 auto;
             margin-top: 10px;
         }
+
         width: 150px;
+
         a {
             font-family: 'Lexend';
             font-style: normal;
@@ -47,6 +51,7 @@
 
         padding: 10px 0px;
         text-align: center;
+
         &:hover {
             a {
                 color: #359740;
@@ -63,7 +68,9 @@
             margin: 0 auto;
             margin-top: 10px;
         }
+
         width: 150px;
+
         a {
             font-family: 'Lexend';
             font-style: normal;
@@ -82,6 +89,7 @@
 
         padding: 10px 0px;
         text-align: center;
+
         &:hover {
             a {
                 color: #359740;
@@ -98,7 +106,9 @@
             margin: 0 auto;
             margin-top: 10px;
         }
+
         width: 150px;
+
         a {
             font-family: 'Lexend';
             font-style: normal;
@@ -117,6 +127,7 @@
 
         padding: 10px 0px;
         text-align: center;
+
         &:hover {
             a {
                 color: #359740;
@@ -131,8 +142,10 @@
             margin: 0 auto;
             margin-top: 10px;
         }
+
         width: 220px;
-        margin-l15t: -120px;
+        margin-left: -120px;
+
         a {
             font-family: 'Lexend';
             font-style: normal;
@@ -147,6 +160,7 @@
 
         padding: 10px 0px;
         text-align: center;
+
         &:hover {
             a {
                 color: #359740;
@@ -161,7 +175,9 @@
             margin: 0 auto;
             margin-top: 10px;
         }
+
         width: 150px;
+
         a {
             font-family: 'Lexend';
             font-style: normal;
@@ -180,6 +196,7 @@
 
         padding: 10px 0px;
         text-align: center;
+
         &:hover {
             a {
                 color: #359740;
@@ -196,7 +213,9 @@
             margin: 0 auto;
             margin-top: 10px;
         }
+
         width: 150px;
+
         a {
             font-family: 'Lexend';
             font-style: normal;
@@ -215,6 +234,7 @@
 
         padding: 10px 0px;
         text-align: center;
+
         &:hover {
             a {
                 color: #359740;

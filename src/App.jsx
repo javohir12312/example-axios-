@@ -10,14 +10,14 @@ import Products from './Products/Products'
 const App = () => {
   return (
     <div className='container'>
-    <Header navArr={['ALL PRODUCTS', 'ABOUT SEEDRA','OUR BLOG','CONTACTS']}/>
+      <Header navArr={['ALL PRODUCTS', 'ABOUT SEEDRA', 'OUR BLOG', 'CONTACTS']} />
       <Routes>
-        <Route path='/'element={<Home data={"https://fakestoreapi.com/products/"}/>}/>
-        <Route path='/ALL PRODUCTS' element={<Products/>}/>
-        <Route path={`/:id`} element={<Inner/>}/>
-        <Route path='*'element={<NotFound/>}/>
+        <Route path='/' element={<Home data={"https://fakestoreapi.com/products/"} />} />
+        <Route path='/ALL PRODUCTS' element={<Products data={"https://fakestoreapi.com/products/"} />} />
+        <Route path={`/:id`} element={<Inner />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

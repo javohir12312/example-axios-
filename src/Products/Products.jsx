@@ -10,7 +10,7 @@ const Products = ({data}) => {
     axios.get(data).then((response) => {
       setPost(response.data);
       setLoad(true)
-    });
+    }); 
   }, []);
   return (
     <div>

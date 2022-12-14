@@ -9,7 +9,7 @@ const Home = ({ data }) => {
     const [post, setPost] = useState([]);
     const [load, setLoad] = useState(false)
     useEffect(() => {
-        axios.get(data).then((response) => {
+        axios.get(`${data}?limit=6`).then((response) => {
             setPost(response.data);
             setLoad(true)
         });

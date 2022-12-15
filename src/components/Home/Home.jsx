@@ -15,11 +15,9 @@ const Home = ({ data }) => {
         });
     }, []);
 
-
-
     return (
         <>
-        <Cards/>
+            <Cards />
             {load ?
                 <ul className='m d-flex justify-content-between flex-wrap gap-3 list-unstyled'>
                     {post.map(item => {

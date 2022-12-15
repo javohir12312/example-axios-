@@ -81,3 +81,4 @@ const Header = ({ navArr }) => {
 }
 
 export default Header
+
